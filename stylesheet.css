@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+    background-color: hsl(0, 0%, 12%);
+    width: 90%;
+    max-width: 35em;
+    height: 50em;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+
+.avatar-jessica {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 8rem;
+    size: 2px; 
+
+}
+
+#profile-name, #profile-location, #profile-bio {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-location {
+font-size: medium;
+margin-bottom: 50px;
+margin-right: 45px;
+
+}
+
+#profile-bio {
+    margin-bottom: 30px;
+}
+
+
+
+#profile-location {
+    color: hsl(75, 94%, 57%);
+}
+
+.col {
+    background-color: hsl(0, 0%, 18%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+   font-size: large;
+   transition: background-color 0.3s;
+}
+
+.col:hover, .col:focus {
+background-color: hsl(75, 94%, 57%);;
+}
+
+.social-grid-container {
+    margin: 0 auto;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 20px;
+    outline: none;
+
+}
+
+    .attribution { 
+        font-size: 11px; text-align: center; }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+@media (max-width: 375px) {
+    .social-grid-container {
+        width: 90%;
+        max-width: 375px;
+    }
+}
